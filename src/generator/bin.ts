@@ -3,7 +3,7 @@ import openapiToTs from "openapi-typescript";
 import {join as pathJoin} from "path";
 import {writeFileSync} from "fs";
 import {DefinitionsApiCallFormatter, DefinitionsApiTypeFormatter, MethodMap, renderMethodMap} from "../utils/method-map";
-
+import axios from "axios";
 type DefinitionsAliasMap = {[key: string]: string};
 
 function exit() {
@@ -23,9 +23,10 @@ async function main() {
     const KUBE_VERSION = process.argv.pop();
     console.log("Running generator for Kubernetes version " + KUBE_VERSION);
 
-    const output = await openapiToTs(
+    const response = await axios.get(
         `https://raw.githubusercontent.com/kubernetes/kubernetes/v${KUBE_VERSION}/api/openapi-spec/swagger.json`
     );
+    const output = openapiToTs(response.data);
 
     writeFileSync(pathJoin(__dirname, "../__generated__/_schema.ts"), output);
 

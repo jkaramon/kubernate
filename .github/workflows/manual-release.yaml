@@ -13,5 +13,4 @@ jobs:
             - run: "yarn install"
             - run: "yarn run release"
               env:
-                  NPM_RC: ${{ secrets.NPM_RC }}
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

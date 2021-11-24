@@ -32,7 +32,7 @@ const preparePackage = (input: any) => {
         },
     };
 };
-
+console.log("aaa", pathJoin(__dirname, "../../dist/package.json"));
 writeFileSync(pathJoin(__dirname, "../../dist/package.json"), JSON.stringify(preparePackage(packageJson), null, 4));
 cp("README.md", "dist/README.md");
 rimraf("dist/assets", () => {

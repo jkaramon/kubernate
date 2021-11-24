@@ -1,0 +1,50 @@
+{
+    "name": "kubernate",
+    "version": "1.20.14",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "license": "MIT",
+    "description": "Generate Kubernetes YAMLs with code instead of templates.",
+    "homepage": "https://kubernate.dev",
+    "readme": "README.md",
+    "files": [
+        "*.js",
+        "*.ts",
+        "*.hbs",
+        "*.yaml",
+        "**/*.js",
+        "**/*.json",
+        "**/*.ts",
+        "**/*.hbs",
+        "**/*.yaml",
+        "**/.empty",
+        "**/.prettierrc",
+        "**/.prettierignore"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/laurci/kubernate"
+    },
+    "bin": {
+        "kubernate": "./cli/bin.js"
+    },
+    "dependencies": {
+        "axios": "^0.24.0",
+        "cosmiconfig": "^7.0.1",
+        "deepmerge": "^4.2.2",
+        "glob": "^7.1.7",
+        "handlebars": "^4.7.7",
+        "minimatch": "^3.0.4",
+        "openapi-typescript": "^3.4.1",
+        "semver": "^7.3.5",
+        "shelljs": "^0.8.4",
+        "ts-morph": "^11.0.3",
+        "ts-node": "^8.10.2",
+        "tslog": "^3.2.1",
+        "type-fest": "^1.2.2",
+        "typescript": "^4.3.5",
+        "typescript-json-schema": "^0.50.1",
+        "yaml": "^1.10.2",
+        "yargs": "^16"
+    }
+}

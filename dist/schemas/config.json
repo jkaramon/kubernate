@@ -1,0 +1,106 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "ConfigOutputs": {
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "schemas": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "code",
+                "schemas"
+            ],
+            "type": "object"
+        }
+    },
+    "properties": {
+        "crds": {
+            "properties": {
+                "list": {
+                    "items": {
+                        "properties": {
+                            "groupPrefix": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "path": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "groupPrefix",
+                            "name",
+                            "path"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "output": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "list",
+                "output"
+            ],
+            "type": "object"
+        },
+        "resources": {
+            "properties": {
+                "contributors": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "entry": {
+                    "type": "string"
+                },
+                "entryTypeName": {
+                    "type": "string"
+                },
+                "exclude": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "include": {
+                    "type": "string"
+                },
+                "output": {
+                    "$ref": "#/definitions/ConfigOutputs"
+                }
+            },
+            "required": [
+                "entry",
+                "output"
+            ],
+            "type": "object"
+        },
+        "scripts": {
+            "additionalProperties": {
+                "type": "string"
+            },
+            "type": "object"
+        },
+        "targetVersion": {
+            "enum": [
+                "v1"
+            ],
+            "type": "string"
+        }
+    },
+    "required": [
+        "targetVersion"
+    ],
+    "type": "object"
+}
+
