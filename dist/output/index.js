@@ -23,7 +23,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const cache_1 = __importStar(require("./cache"));
-const promises_1 = require("fs/promises");
+const fs_1 = require("fs");
 const fs = __importStar(require("fs"));
 const path_1 = require("path");
 const __1 = require("..");
@@ -44,7 +44,16 @@ const output = {
             __1.log.debug(`creating directory ${(0, path_1.dirname)(path)}`);
             fs.mkdirSync((0, path_1.dirname)(path), { recursive: true });
         }
-        await (0, promises_1.writeFile)(path, bundle);
+        await new Promise((resolve, reject) => {
+            (0, fs_1.writeFile)(path, bundle, (err) => {
+                if (err) {
+                    reject(err);
+                }
+                else {
+                    resolve();
+                }
+            });
+        });
         return bundle;
     },
     resetBundle() {
