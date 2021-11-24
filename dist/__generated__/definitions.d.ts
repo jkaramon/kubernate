@@ -20,12 +20,6 @@ export declare type DefinitionsAliasMap = {
     "admissionregistration.v1beta1.ValidatingWebhookConfiguration": defs["io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfiguration"];
     "admissionregistration.v1beta1.ValidatingWebhookConfigurationList": defs["io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfigurationList"];
     "admissionregistration.v1beta1.WebhookClientConfig": defs["io.k8s.api.admissionregistration.v1beta1.WebhookClientConfig"];
-    "apiserverinternal.v1alpha1.ServerStorageVersion": defs["io.k8s.api.apiserverinternal.v1alpha1.ServerStorageVersion"];
-    "apiserverinternal.v1alpha1.StorageVersion": defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersion"];
-    "apiserverinternal.v1alpha1.StorageVersionCondition": defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionCondition"];
-    "apiserverinternal.v1alpha1.StorageVersionList": defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionList"];
-    "apiserverinternal.v1alpha1.StorageVersionSpec": defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionSpec"];
-    "apiserverinternal.v1alpha1.StorageVersionStatus": defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionStatus"];
     "apps.v1.ControllerRevision": defs["io.k8s.api.apps.v1.ControllerRevision"];
     "apps.v1.ControllerRevisionList": defs["io.k8s.api.apps.v1.ControllerRevisionList"];
     "apps.v1.DaemonSet": defs["io.k8s.api.apps.v1.DaemonSet"];
@@ -100,8 +94,6 @@ export declare type DefinitionsAliasMap = {
     "autoscaling.v1.Scale": defs["io.k8s.api.autoscaling.v1.Scale"];
     "autoscaling.v1.ScaleSpec": defs["io.k8s.api.autoscaling.v1.ScaleSpec"];
     "autoscaling.v1.ScaleStatus": defs["io.k8s.api.autoscaling.v1.ScaleStatus"];
-    "autoscaling.v2beta1.ContainerResourceMetricSource": defs["io.k8s.api.autoscaling.v2beta1.ContainerResourceMetricSource"];
-    "autoscaling.v2beta1.ContainerResourceMetricStatus": defs["io.k8s.api.autoscaling.v2beta1.ContainerResourceMetricStatus"];
     "autoscaling.v2beta1.CrossVersionObjectReference": defs["io.k8s.api.autoscaling.v2beta1.CrossVersionObjectReference"];
     "autoscaling.v2beta1.ExternalMetricSource": defs["io.k8s.api.autoscaling.v2beta1.ExternalMetricSource"];
     "autoscaling.v2beta1.ExternalMetricStatus": defs["io.k8s.api.autoscaling.v2beta1.ExternalMetricStatus"];
@@ -118,8 +110,6 @@ export declare type DefinitionsAliasMap = {
     "autoscaling.v2beta1.PodsMetricStatus": defs["io.k8s.api.autoscaling.v2beta1.PodsMetricStatus"];
     "autoscaling.v2beta1.ResourceMetricSource": defs["io.k8s.api.autoscaling.v2beta1.ResourceMetricSource"];
     "autoscaling.v2beta1.ResourceMetricStatus": defs["io.k8s.api.autoscaling.v2beta1.ResourceMetricStatus"];
-    "autoscaling.v2beta2.ContainerResourceMetricSource": defs["io.k8s.api.autoscaling.v2beta2.ContainerResourceMetricSource"];
-    "autoscaling.v2beta2.ContainerResourceMetricStatus": defs["io.k8s.api.autoscaling.v2beta2.ContainerResourceMetricStatus"];
     "autoscaling.v2beta2.CrossVersionObjectReference": defs["io.k8s.api.autoscaling.v2beta2.CrossVersionObjectReference"];
     "autoscaling.v2beta2.ExternalMetricSource": defs["io.k8s.api.autoscaling.v2beta2.ExternalMetricSource"];
     "autoscaling.v2beta2.ExternalMetricStatus": defs["io.k8s.api.autoscaling.v2beta2.ExternalMetricStatus"];
@@ -301,7 +291,6 @@ export declare type DefinitionsAliasMap = {
     "core.v1.PodTemplate": defs["io.k8s.api.core.v1.PodTemplate"];
     "core.v1.PodTemplateList": defs["io.k8s.api.core.v1.PodTemplateList"];
     "core.v1.PodTemplateSpec": defs["io.k8s.api.core.v1.PodTemplateSpec"];
-    "core.v1.PortStatus": defs["io.k8s.api.core.v1.PortStatus"];
     "core.v1.PortworxVolumeSource": defs["io.k8s.api.core.v1.PortworxVolumeSource"];
     "core.v1.PreferredSchedulingTerm": defs["io.k8s.api.core.v1.PreferredSchedulingTerm"];
     "core.v1.Probe": defs["io.k8s.api.core.v1.Probe"];
@@ -403,28 +392,6 @@ export declare type DefinitionsAliasMap = {
     "flowcontrol.v1alpha1.ServiceAccountSubject": defs["io.k8s.api.flowcontrol.v1alpha1.ServiceAccountSubject"];
     "flowcontrol.v1alpha1.Subject": defs["io.k8s.api.flowcontrol.v1alpha1.Subject"];
     "flowcontrol.v1alpha1.UserSubject": defs["io.k8s.api.flowcontrol.v1alpha1.UserSubject"];
-    "flowcontrol.v1beta1.FlowDistinguisherMethod": defs["io.k8s.api.flowcontrol.v1beta1.FlowDistinguisherMethod"];
-    "flowcontrol.v1beta1.FlowSchema": defs["io.k8s.api.flowcontrol.v1beta1.FlowSchema"];
-    "flowcontrol.v1beta1.FlowSchemaCondition": defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaCondition"];
-    "flowcontrol.v1beta1.FlowSchemaList": defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaList"];
-    "flowcontrol.v1beta1.FlowSchemaSpec": defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaSpec"];
-    "flowcontrol.v1beta1.FlowSchemaStatus": defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaStatus"];
-    "flowcontrol.v1beta1.GroupSubject": defs["io.k8s.api.flowcontrol.v1beta1.GroupSubject"];
-    "flowcontrol.v1beta1.LimitResponse": defs["io.k8s.api.flowcontrol.v1beta1.LimitResponse"];
-    "flowcontrol.v1beta1.LimitedPriorityLevelConfiguration": defs["io.k8s.api.flowcontrol.v1beta1.LimitedPriorityLevelConfiguration"];
-    "flowcontrol.v1beta1.NonResourcePolicyRule": defs["io.k8s.api.flowcontrol.v1beta1.NonResourcePolicyRule"];
-    "flowcontrol.v1beta1.PolicyRulesWithSubjects": defs["io.k8s.api.flowcontrol.v1beta1.PolicyRulesWithSubjects"];
-    "flowcontrol.v1beta1.PriorityLevelConfiguration": defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfiguration"];
-    "flowcontrol.v1beta1.PriorityLevelConfigurationCondition": defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationCondition"];
-    "flowcontrol.v1beta1.PriorityLevelConfigurationList": defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationList"];
-    "flowcontrol.v1beta1.PriorityLevelConfigurationReference": defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationReference"];
-    "flowcontrol.v1beta1.PriorityLevelConfigurationSpec": defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationSpec"];
-    "flowcontrol.v1beta1.PriorityLevelConfigurationStatus": defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationStatus"];
-    "flowcontrol.v1beta1.QueuingConfiguration": defs["io.k8s.api.flowcontrol.v1beta1.QueuingConfiguration"];
-    "flowcontrol.v1beta1.ResourcePolicyRule": defs["io.k8s.api.flowcontrol.v1beta1.ResourcePolicyRule"];
-    "flowcontrol.v1beta1.ServiceAccountSubject": defs["io.k8s.api.flowcontrol.v1beta1.ServiceAccountSubject"];
-    "flowcontrol.v1beta1.Subject": defs["io.k8s.api.flowcontrol.v1beta1.Subject"];
-    "flowcontrol.v1beta1.UserSubject": defs["io.k8s.api.flowcontrol.v1beta1.UserSubject"];
     "networking.v1.HTTPIngressPath": defs["io.k8s.api.networking.v1.HTTPIngressPath"];
     "networking.v1.HTTPIngressRuleValue": defs["io.k8s.api.networking.v1.HTTPIngressRuleValue"];
     "networking.v1.IPBlock": defs["io.k8s.api.networking.v1.IPBlock"];
@@ -459,10 +426,6 @@ export declare type DefinitionsAliasMap = {
     "networking.v1beta1.IngressSpec": defs["io.k8s.api.networking.v1beta1.IngressSpec"];
     "networking.v1beta1.IngressStatus": defs["io.k8s.api.networking.v1beta1.IngressStatus"];
     "networking.v1beta1.IngressTLS": defs["io.k8s.api.networking.v1beta1.IngressTLS"];
-    "node.v1.Overhead": defs["io.k8s.api.node.v1.Overhead"];
-    "node.v1.RuntimeClass": defs["io.k8s.api.node.v1.RuntimeClass"];
-    "node.v1.RuntimeClassList": defs["io.k8s.api.node.v1.RuntimeClassList"];
-    "node.v1.Scheduling": defs["io.k8s.api.node.v1.Scheduling"];
     "node.v1alpha1.Overhead": defs["io.k8s.api.node.v1alpha1.Overhead"];
     "node.v1alpha1.RuntimeClass": defs["io.k8s.api.node.v1alpha1.RuntimeClass"];
     "node.v1alpha1.RuntimeClassList": defs["io.k8s.api.node.v1alpha1.RuntimeClassList"];
@@ -533,6 +496,9 @@ export declare type DefinitionsAliasMap = {
     "scheduling.v1alpha1.PriorityClassList": defs["io.k8s.api.scheduling.v1alpha1.PriorityClassList"];
     "scheduling.v1beta1.PriorityClass": defs["io.k8s.api.scheduling.v1beta1.PriorityClass"];
     "scheduling.v1beta1.PriorityClassList": defs["io.k8s.api.scheduling.v1beta1.PriorityClassList"];
+    "settings.v1alpha1.PodPreset": defs["io.k8s.api.settings.v1alpha1.PodPreset"];
+    "settings.v1alpha1.PodPresetList": defs["io.k8s.api.settings.v1alpha1.PodPresetList"];
+    "settings.v1alpha1.PodPresetSpec": defs["io.k8s.api.settings.v1alpha1.PodPresetSpec"];
     "storage.v1.CSIDriver": defs["io.k8s.api.storage.v1.CSIDriver"];
     "storage.v1.CSIDriverList": defs["io.k8s.api.storage.v1.CSIDriverList"];
     "storage.v1.CSIDriverSpec": defs["io.k8s.api.storage.v1.CSIDriverSpec"];
@@ -542,7 +508,6 @@ export declare type DefinitionsAliasMap = {
     "storage.v1.CSINodeSpec": defs["io.k8s.api.storage.v1.CSINodeSpec"];
     "storage.v1.StorageClass": defs["io.k8s.api.storage.v1.StorageClass"];
     "storage.v1.StorageClassList": defs["io.k8s.api.storage.v1.StorageClassList"];
-    "storage.v1.TokenRequest": defs["io.k8s.api.storage.v1.TokenRequest"];
     "storage.v1.VolumeAttachment": defs["io.k8s.api.storage.v1.VolumeAttachment"];
     "storage.v1.VolumeAttachmentList": defs["io.k8s.api.storage.v1.VolumeAttachmentList"];
     "storage.v1.VolumeAttachmentSource": defs["io.k8s.api.storage.v1.VolumeAttachmentSource"];
@@ -565,7 +530,6 @@ export declare type DefinitionsAliasMap = {
     "storage.v1beta1.CSINodeSpec": defs["io.k8s.api.storage.v1beta1.CSINodeSpec"];
     "storage.v1beta1.StorageClass": defs["io.k8s.api.storage.v1beta1.StorageClass"];
     "storage.v1beta1.StorageClassList": defs["io.k8s.api.storage.v1beta1.StorageClassList"];
-    "storage.v1beta1.TokenRequest": defs["io.k8s.api.storage.v1beta1.TokenRequest"];
     "storage.v1beta1.VolumeAttachment": defs["io.k8s.api.storage.v1beta1.VolumeAttachment"];
     "storage.v1beta1.VolumeAttachmentList": defs["io.k8s.api.storage.v1beta1.VolumeAttachmentList"];
     "storage.v1beta1.VolumeAttachmentSource": defs["io.k8s.api.storage.v1beta1.VolumeAttachmentSource"];
@@ -598,16 +562,6 @@ export declare type DefinitionsMap = {
                 "ValidatingWebhookConfiguration": ApiCallMethod<defs["io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfiguration"]>;
                 "ValidatingWebhookConfigurationList": ApiCallMethod<defs["io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfigurationList"]>;
                 "WebhookClientConfig": ApiCallMethod<defs["io.k8s.api.admissionregistration.v1beta1.WebhookClientConfig"]>;
-            };
-        };
-        "apiserverinternal": {
-            "v1alpha1": {
-                "ServerStorageVersion": ApiCallMethod<defs["io.k8s.api.apiserverinternal.v1alpha1.ServerStorageVersion"]>;
-                "StorageVersion": ApiCallMethod<defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersion"]>;
-                "StorageVersionCondition": ApiCallMethod<defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionCondition"]>;
-                "StorageVersionList": ApiCallMethod<defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionList"]>;
-                "StorageVersionSpec": ApiCallMethod<defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionSpec"]>;
-                "StorageVersionStatus": ApiCallMethod<defs["io.k8s.api.apiserverinternal.v1alpha1.StorageVersionStatus"]>;
             };
         };
         "apps": {
@@ -704,8 +658,6 @@ export declare type DefinitionsMap = {
                 "ScaleStatus": ApiCallMethod<defs["io.k8s.api.autoscaling.v1.ScaleStatus"]>;
             };
             "v2beta1": {
-                "ContainerResourceMetricSource": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta1.ContainerResourceMetricSource"]>;
-                "ContainerResourceMetricStatus": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta1.ContainerResourceMetricStatus"]>;
                 "CrossVersionObjectReference": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta1.CrossVersionObjectReference"]>;
                 "ExternalMetricSource": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta1.ExternalMetricSource"]>;
                 "ExternalMetricStatus": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta1.ExternalMetricStatus"]>;
@@ -724,8 +676,6 @@ export declare type DefinitionsMap = {
                 "ResourceMetricStatus": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta1.ResourceMetricStatus"]>;
             };
             "v2beta2": {
-                "ContainerResourceMetricSource": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta2.ContainerResourceMetricSource"]>;
-                "ContainerResourceMetricStatus": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta2.ContainerResourceMetricStatus"]>;
                 "CrossVersionObjectReference": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta2.CrossVersionObjectReference"]>;
                 "ExternalMetricSource": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta2.ExternalMetricSource"]>;
                 "ExternalMetricStatus": ApiCallMethod<defs["io.k8s.api.autoscaling.v2beta2.ExternalMetricStatus"]>;
@@ -931,7 +881,6 @@ export declare type DefinitionsMap = {
                 "PodTemplate": ApiCallMethod<defs["io.k8s.api.core.v1.PodTemplate"]>;
                 "PodTemplateList": ApiCallMethod<defs["io.k8s.api.core.v1.PodTemplateList"]>;
                 "PodTemplateSpec": ApiCallMethod<defs["io.k8s.api.core.v1.PodTemplateSpec"]>;
-                "PortStatus": ApiCallMethod<defs["io.k8s.api.core.v1.PortStatus"]>;
                 "PortworxVolumeSource": ApiCallMethod<defs["io.k8s.api.core.v1.PortworxVolumeSource"]>;
                 "PreferredSchedulingTerm": ApiCallMethod<defs["io.k8s.api.core.v1.PreferredSchedulingTerm"]>;
                 "Probe": ApiCallMethod<defs["io.k8s.api.core.v1.Probe"]>;
@@ -1052,30 +1001,6 @@ export declare type DefinitionsMap = {
                 "Subject": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1alpha1.Subject"]>;
                 "UserSubject": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1alpha1.UserSubject"]>;
             };
-            "v1beta1": {
-                "FlowDistinguisherMethod": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.FlowDistinguisherMethod"]>;
-                "FlowSchema": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.FlowSchema"]>;
-                "FlowSchemaCondition": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaCondition"]>;
-                "FlowSchemaList": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaList"]>;
-                "FlowSchemaSpec": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaSpec"]>;
-                "FlowSchemaStatus": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.FlowSchemaStatus"]>;
-                "GroupSubject": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.GroupSubject"]>;
-                "LimitResponse": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.LimitResponse"]>;
-                "LimitedPriorityLevelConfiguration": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.LimitedPriorityLevelConfiguration"]>;
-                "NonResourcePolicyRule": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.NonResourcePolicyRule"]>;
-                "PolicyRulesWithSubjects": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.PolicyRulesWithSubjects"]>;
-                "PriorityLevelConfiguration": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfiguration"]>;
-                "PriorityLevelConfigurationCondition": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationCondition"]>;
-                "PriorityLevelConfigurationList": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationList"]>;
-                "PriorityLevelConfigurationReference": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationReference"]>;
-                "PriorityLevelConfigurationSpec": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationSpec"]>;
-                "PriorityLevelConfigurationStatus": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationStatus"]>;
-                "QueuingConfiguration": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.QueuingConfiguration"]>;
-                "ResourcePolicyRule": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.ResourcePolicyRule"]>;
-                "ServiceAccountSubject": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.ServiceAccountSubject"]>;
-                "Subject": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.Subject"]>;
-                "UserSubject": ApiCallMethod<defs["io.k8s.api.flowcontrol.v1beta1.UserSubject"]>;
-            };
         };
         "networking": {
             "v1": {
@@ -1118,12 +1043,6 @@ export declare type DefinitionsMap = {
             };
         };
         "node": {
-            "v1": {
-                "Overhead": ApiCallMethod<defs["io.k8s.api.node.v1.Overhead"]>;
-                "RuntimeClass": ApiCallMethod<defs["io.k8s.api.node.v1.RuntimeClass"]>;
-                "RuntimeClassList": ApiCallMethod<defs["io.k8s.api.node.v1.RuntimeClassList"]>;
-                "Scheduling": ApiCallMethod<defs["io.k8s.api.node.v1.Scheduling"]>;
-            };
             "v1alpha1": {
                 "Overhead": ApiCallMethod<defs["io.k8s.api.node.v1alpha1.Overhead"]>;
                 "RuntimeClass": ApiCallMethod<defs["io.k8s.api.node.v1alpha1.RuntimeClass"]>;
@@ -1219,6 +1138,13 @@ export declare type DefinitionsMap = {
                 "PriorityClassList": ApiCallMethod<defs["io.k8s.api.scheduling.v1beta1.PriorityClassList"]>;
             };
         };
+        "settings": {
+            "v1alpha1": {
+                "PodPreset": ApiCallMethod<defs["io.k8s.api.settings.v1alpha1.PodPreset"]>;
+                "PodPresetList": ApiCallMethod<defs["io.k8s.api.settings.v1alpha1.PodPresetList"]>;
+                "PodPresetSpec": ApiCallMethod<defs["io.k8s.api.settings.v1alpha1.PodPresetSpec"]>;
+            };
+        };
         "storage": {
             "v1": {
                 "CSIDriver": ApiCallMethod<defs["io.k8s.api.storage.v1.CSIDriver"]>;
@@ -1230,7 +1156,6 @@ export declare type DefinitionsMap = {
                 "CSINodeSpec": ApiCallMethod<defs["io.k8s.api.storage.v1.CSINodeSpec"]>;
                 "StorageClass": ApiCallMethod<defs["io.k8s.api.storage.v1.StorageClass"]>;
                 "StorageClassList": ApiCallMethod<defs["io.k8s.api.storage.v1.StorageClassList"]>;
-                "TokenRequest": ApiCallMethod<defs["io.k8s.api.storage.v1.TokenRequest"]>;
                 "VolumeAttachment": ApiCallMethod<defs["io.k8s.api.storage.v1.VolumeAttachment"]>;
                 "VolumeAttachmentList": ApiCallMethod<defs["io.k8s.api.storage.v1.VolumeAttachmentList"]>;
                 "VolumeAttachmentSource": ApiCallMethod<defs["io.k8s.api.storage.v1.VolumeAttachmentSource"]>;
@@ -1257,7 +1182,6 @@ export declare type DefinitionsMap = {
                 "CSINodeSpec": ApiCallMethod<defs["io.k8s.api.storage.v1beta1.CSINodeSpec"]>;
                 "StorageClass": ApiCallMethod<defs["io.k8s.api.storage.v1beta1.StorageClass"]>;
                 "StorageClassList": ApiCallMethod<defs["io.k8s.api.storage.v1beta1.StorageClassList"]>;
-                "TokenRequest": ApiCallMethod<defs["io.k8s.api.storage.v1beta1.TokenRequest"]>;
                 "VolumeAttachment": ApiCallMethod<defs["io.k8s.api.storage.v1beta1.VolumeAttachment"]>;
                 "VolumeAttachmentList": ApiCallMethod<defs["io.k8s.api.storage.v1beta1.VolumeAttachmentList"]>;
                 "VolumeAttachmentSource": ApiCallMethod<defs["io.k8s.api.storage.v1beta1.VolumeAttachmentSource"]>;

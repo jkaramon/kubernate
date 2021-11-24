@@ -1,6 +1,6 @@
 {
     "name": "kubernate",
-    "version": "1.20.14",
+    "version": "1.19.14",
     "main": "index.js",
     "types": "index.d.ts",
     "license": "MIT",

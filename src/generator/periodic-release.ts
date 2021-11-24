@@ -40,7 +40,7 @@ async function main() {
     const kubernateReleases = await getReleaseBuckets("laurci", "kubernate");
 
     async function doRelease() {
-        const currentKubernateVersion = "1.20.13";
+        const currentKubernateVersion = "1.19.13";
 
         const nextKubernateVersion = semver.inc(currentKubernateVersion, "patch")!;
         const nextKubernateReleaseName = `v${nextKubernateVersion} for Kubernetes ${currentKubernateVersion}`;

@@ -29,16 +29,6 @@ exports.definitions = {
                 "WebhookClientConfig": (0, api_1.apiCallMethod)("io.k8s.api.admissionregistration.v1beta1.WebhookClientConfig"),
             },
         },
-        "apiserverinternal": {
-            "v1alpha1": {
-                "ServerStorageVersion": (0, api_1.apiCallMethod)("io.k8s.api.apiserverinternal.v1alpha1.ServerStorageVersion"),
-                "StorageVersion": (0, api_1.apiCallMethod)("io.k8s.api.apiserverinternal.v1alpha1.StorageVersion"),
-                "StorageVersionCondition": (0, api_1.apiCallMethod)("io.k8s.api.apiserverinternal.v1alpha1.StorageVersionCondition"),
-                "StorageVersionList": (0, api_1.apiCallMethod)("io.k8s.api.apiserverinternal.v1alpha1.StorageVersionList"),
-                "StorageVersionSpec": (0, api_1.apiCallMethod)("io.k8s.api.apiserverinternal.v1alpha1.StorageVersionSpec"),
-                "StorageVersionStatus": (0, api_1.apiCallMethod)("io.k8s.api.apiserverinternal.v1alpha1.StorageVersionStatus"),
-            },
-        },
         "apps": {
             "v1": {
                 "ControllerRevision": (0, api_1.apiCallMethod)("io.k8s.api.apps.v1.ControllerRevision"),
@@ -133,8 +123,6 @@ exports.definitions = {
                 "ScaleStatus": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v1.ScaleStatus"),
             },
             "v2beta1": {
-                "ContainerResourceMetricSource": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta1.ContainerResourceMetricSource"),
-                "ContainerResourceMetricStatus": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta1.ContainerResourceMetricStatus"),
                 "CrossVersionObjectReference": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta1.CrossVersionObjectReference"),
                 "ExternalMetricSource": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta1.ExternalMetricSource"),
                 "ExternalMetricStatus": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta1.ExternalMetricStatus"),
@@ -153,8 +141,6 @@ exports.definitions = {
                 "ResourceMetricStatus": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta1.ResourceMetricStatus"),
             },
             "v2beta2": {
-                "ContainerResourceMetricSource": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta2.ContainerResourceMetricSource"),
-                "ContainerResourceMetricStatus": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta2.ContainerResourceMetricStatus"),
                 "CrossVersionObjectReference": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta2.CrossVersionObjectReference"),
                 "ExternalMetricSource": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta2.ExternalMetricSource"),
                 "ExternalMetricStatus": (0, api_1.apiCallMethod)("io.k8s.api.autoscaling.v2beta2.ExternalMetricStatus"),
@@ -360,7 +346,6 @@ exports.definitions = {
                 "PodTemplate": (0, api_1.apiCallMethod)("io.k8s.api.core.v1.PodTemplate"),
                 "PodTemplateList": (0, api_1.apiCallMethod)("io.k8s.api.core.v1.PodTemplateList"),
                 "PodTemplateSpec": (0, api_1.apiCallMethod)("io.k8s.api.core.v1.PodTemplateSpec"),
-                "PortStatus": (0, api_1.apiCallMethod)("io.k8s.api.core.v1.PortStatus"),
                 "PortworxVolumeSource": (0, api_1.apiCallMethod)("io.k8s.api.core.v1.PortworxVolumeSource"),
                 "PreferredSchedulingTerm": (0, api_1.apiCallMethod)("io.k8s.api.core.v1.PreferredSchedulingTerm"),
                 "Probe": (0, api_1.apiCallMethod)("io.k8s.api.core.v1.Probe"),
@@ -481,30 +466,6 @@ exports.definitions = {
                 "Subject": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1alpha1.Subject"),
                 "UserSubject": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1alpha1.UserSubject"),
             },
-            "v1beta1": {
-                "FlowDistinguisherMethod": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.FlowDistinguisherMethod"),
-                "FlowSchema": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.FlowSchema"),
-                "FlowSchemaCondition": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.FlowSchemaCondition"),
-                "FlowSchemaList": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.FlowSchemaList"),
-                "FlowSchemaSpec": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.FlowSchemaSpec"),
-                "FlowSchemaStatus": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.FlowSchemaStatus"),
-                "GroupSubject": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.GroupSubject"),
-                "LimitResponse": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.LimitResponse"),
-                "LimitedPriorityLevelConfiguration": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.LimitedPriorityLevelConfiguration"),
-                "NonResourcePolicyRule": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.NonResourcePolicyRule"),
-                "PolicyRulesWithSubjects": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.PolicyRulesWithSubjects"),
-                "PriorityLevelConfiguration": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfiguration"),
-                "PriorityLevelConfigurationCondition": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationCondition"),
-                "PriorityLevelConfigurationList": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationList"),
-                "PriorityLevelConfigurationReference": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationReference"),
-                "PriorityLevelConfigurationSpec": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationSpec"),
-                "PriorityLevelConfigurationStatus": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.PriorityLevelConfigurationStatus"),
-                "QueuingConfiguration": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.QueuingConfiguration"),
-                "ResourcePolicyRule": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.ResourcePolicyRule"),
-                "ServiceAccountSubject": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.ServiceAccountSubject"),
-                "Subject": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.Subject"),
-                "UserSubject": (0, api_1.apiCallMethod)("io.k8s.api.flowcontrol.v1beta1.UserSubject"),
-            },
         },
         "networking": {
             "v1": {
@@ -547,12 +508,6 @@ exports.definitions = {
             },
         },
         "node": {
-            "v1": {
-                "Overhead": (0, api_1.apiCallMethod)("io.k8s.api.node.v1.Overhead"),
-                "RuntimeClass": (0, api_1.apiCallMethod)("io.k8s.api.node.v1.RuntimeClass"),
-                "RuntimeClassList": (0, api_1.apiCallMethod)("io.k8s.api.node.v1.RuntimeClassList"),
-                "Scheduling": (0, api_1.apiCallMethod)("io.k8s.api.node.v1.Scheduling"),
-            },
             "v1alpha1": {
                 "Overhead": (0, api_1.apiCallMethod)("io.k8s.api.node.v1alpha1.Overhead"),
                 "RuntimeClass": (0, api_1.apiCallMethod)("io.k8s.api.node.v1alpha1.RuntimeClass"),
@@ -648,6 +603,13 @@ exports.definitions = {
                 "PriorityClassList": (0, api_1.apiCallMethod)("io.k8s.api.scheduling.v1beta1.PriorityClassList"),
             },
         },
+        "settings": {
+            "v1alpha1": {
+                "PodPreset": (0, api_1.apiCallMethod)("io.k8s.api.settings.v1alpha1.PodPreset"),
+                "PodPresetList": (0, api_1.apiCallMethod)("io.k8s.api.settings.v1alpha1.PodPresetList"),
+                "PodPresetSpec": (0, api_1.apiCallMethod)("io.k8s.api.settings.v1alpha1.PodPresetSpec"),
+            },
+        },
         "storage": {
             "v1": {
                 "CSIDriver": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.CSIDriver"),
@@ -659,7 +621,6 @@ exports.definitions = {
                 "CSINodeSpec": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.CSINodeSpec"),
                 "StorageClass": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.StorageClass"),
                 "StorageClassList": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.StorageClassList"),
-                "TokenRequest": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.TokenRequest"),
                 "VolumeAttachment": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.VolumeAttachment"),
                 "VolumeAttachmentList": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.VolumeAttachmentList"),
                 "VolumeAttachmentSource": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1.VolumeAttachmentSource"),
@@ -686,7 +647,6 @@ exports.definitions = {
                 "CSINodeSpec": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1beta1.CSINodeSpec"),
                 "StorageClass": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1beta1.StorageClass"),
                 "StorageClassList": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1beta1.StorageClassList"),
-                "TokenRequest": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1beta1.TokenRequest"),
                 "VolumeAttachment": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1beta1.VolumeAttachment"),
                 "VolumeAttachmentList": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1beta1.VolumeAttachmentList"),
                 "VolumeAttachmentSource": (0, api_1.apiCallMethod)("io.k8s.api.storage.v1beta1.VolumeAttachmentSource"),
