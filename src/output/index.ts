@@ -1,5 +1,5 @@
 import cache, {ResourcesBundle} from "./cache";
-import {writeFile} from "fs/promises";
+import {writeFile} from "fs";
 import * as fs from "fs";
 import {dirname} from "path";
 import {OutputTransformer} from "./transformer";
@@ -29,7 +29,15 @@ const output = {
             fs.mkdirSync(dirname(path), {recursive: true});
         }
 
-        await writeFile(path, bundle);
+        await new Promise<void>((resolve, reject) => {
+            writeFile(path, bundle, (err) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve();
+                }
+            });
+        });
         return bundle;
     },
     resetBundle() {
