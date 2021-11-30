@@ -1,5 +1,5 @@
 import {Project} from "ts-morph";
-import openapiToTs from "openapi-typescript";
+import openapiToTs, {SchemaObject} from "openapi-typescript";
 import {join as pathJoin} from "path";
 import {writeFileSync} from "fs";
 import {DefinitionsApiCallFormatter, DefinitionsApiTypeFormatter, MethodMap, renderMethodMap} from "../utils/method-map";
@@ -26,7 +26,12 @@ async function main() {
     const response = await axios.get(
         `https://raw.githubusercontent.com/kubernetes/kubernetes/v${KUBE_VERSION}/api/openapi-spec/swagger.json`
     );
-    const output = openapiToTs(response.data);
+    let output = openapiToTs(response.data);
+
+    output = output.replace(
+        /\"io.k8s.apimachinery.pkg.util.intstr.IntOrString\": string;/g,
+        '"io.k8s.apimachinery.pkg.util.intstr.IntOrString": string | number;'
+    );
 
     writeFileSync(pathJoin(__dirname, "../__generated__/_schema.ts"), output);
 
@@ -52,7 +57,6 @@ async function main() {
         if (!name.includes("io.k8s.api.")) {
             continue;
         }
-
         definitionsAliasMap[name.replace("io.k8s.api.", "")] = `defs["${name}"]`;
 
         const methodComponents = name.replace("io.k8s.api.", "").split(".");
